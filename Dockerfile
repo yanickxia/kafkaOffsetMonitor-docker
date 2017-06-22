@@ -3,7 +3,7 @@ FROM java
 LABEL maintainer "yann.xia@daocloud.io"
 
 ADD https://github.com/quantifind/KafkaOffsetMonitor/releases/download/v0.2.1/KafkaOffsetMonitor-assembly-0.2.1.jar  \
-/usr/src/myapp/nev-access-server-all-1.0-SNAPSHOT.jar
+/usr/src/myapp/KafkaOffsetMonitor-assembly-0.2.1.jar 
 
 WORKDIR /usr/src/myapp/
 

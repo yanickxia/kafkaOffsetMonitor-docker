@@ -1,0 +1,14 @@
+version: '2'
+services:
+  kafka-offset-monitor:
+    image: daocloud.io/ecar/kafka-offset-monitor:
+    hostname: kafka-offset-monitor
+    networks:
+      evm_prd:
+        aliases:
+        - kafka-offset-monitor
+    ports:
+    - 8080:8080/tcp
+networks:
+  evm_prd:
+    external: true
